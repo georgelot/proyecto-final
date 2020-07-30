@@ -196,22 +196,6 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
 	<script type="text/javascript" src="https://cdn.datatables.net/v/dt/jq-3.3.1/jszip-2.5.0/dt-1.10.21/b-1.6.2/b-flash-1.6.2/b-html5-1.6.2/b-print-1.6.2/datatables.min.js"></script>
 	<!-- datatables json completo fin -->
-	
-	<script type="text/javascript">
-		const cdn = "http://cdn.datatables.net/plug-ins/1.10.21/i18n/Spanish.json"
-
-		$(document).ready(function(){
-				$('#dataTable').DataTable({
-					dom: 'Bfrtip',
-					buttons: [
-						'copy', 'csv', 'excel', 'pdf', 'print'
-							],
-						"language" : {
-							"url" : cdn
-							}
-						});
-					})			
-	</script>
 
 </body>
 </html>>

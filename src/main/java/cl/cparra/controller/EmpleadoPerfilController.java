@@ -5,12 +5,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/registroEventos")
-public class EventosEmpleadoController {
+@RequestMapping("/actualizaEmpleado")
+public class EmpleadoPerfilController {
 
 	@GetMapping
-	public String registroEventos() {
-		String registroEventos = "registroEventos";
-		return registroEventos;
+	public String actualizaEmpleado() {
+		String actualizaEmpleado = "actualizaEmpleado";
+		return actualizaEmpleado;
 	}
 }
