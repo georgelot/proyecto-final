@@ -13,7 +13,7 @@
 	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta name="description" content="" />
 <meta name="author" content="" />
-<title>Dashboard - Administrador</title>
+<title>Dashboard - Empleados</title>
 <link href="css/styles.css" rel="stylesheet" />
 <link
 	href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css"
@@ -40,7 +40,7 @@
 				aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
 				<div class="dropdown-menu dropdown-menu-right"
 					aria-labelledby="userDropdown">
-					<a class="dropdown-item" href='<c:out value="/indexAdmin" />'>Home</a>
+					<a class="dropdown-item" href='<c:out value="/indexEmpleados" />'>Home</a>
 					<a class="dropdown-item" href='<c:out value="/login" />'>Salir Sistema</a>
 				</div></li>
 		</ul>
@@ -51,13 +51,13 @@
 				id="sidenavAccordion">
 				<div class="sb-sidenav-menu">
 					<div class="nav">
-						<div class="sb-sidenav-menu-heading">Mantenedor Universal</div>
+						<div class="sb-sidenav-menu-heading">Gestion Edificio</div>
 						<a class="nav-link collapsed" href="#" data-toggle="collapse"
 							data-target="#collapseLayouts" aria-expanded="false"
 							aria-controls="collapseLayouts">
 							<div class="sb-nav-link-icon">
 								<i class="fas fa-columns"></i>
-							</div> Mantenedor
+							</div> Contenedor
 							<div class="sb-sidenav-collapse-arrow">
 								<i class="fas fa-angle-down"></i>
 							</div>
@@ -65,8 +65,10 @@
 						<div class="collapse" id="collapseLayouts"
 							aria-labelledby="headingOne" data-parent="#sidenavAccordion">
 							<nav class="sb-sidenav-menu-nested nav">
-								<a class="nav-link" href='<c:out value="/mantenedorResidentes" />'>Residentes</a>
-								<a class="nav-link" href='<c:out value="/mantenedorEmpleados" />'>Empleados</a>
+                                    <a class="nav-link" href='<c:out value="/registroVisitas" />'>Visitas</a>
+                                    <a class="nav-link" href='<c:out value="/registoEncomiendas" />'>Encomiendas</a>
+                                    <a class="nav-link" href='<c:out value="/registroEventos" />'>Reservas</a>
+                                    <a class="nav-link" href='<c:out value="/actualizaEmpleado" />'>Mis Datos</a>
 							</nav>
 						</div>
                             <div class="sb-sidenav-menu-heading">Noticias</div>
@@ -82,67 +84,66 @@
 				</div>
 				<div class="sb-sidenav-footer">
 					<div class="small">Autenticado como:</div>
-					Administrador Edificio
+					Empleado Edificio
 				</div>
 			</nav>
 		</div>
 		<div id="layoutSidenav_content">
 			<main>
 				<div class="container-fluid">
-					<h1 class="mt-4">Maestro de Residentes</h1>
+					<h1 class="mt-4">Gestion de Reservas de Espacios</h1>
 
 					<div class="card mb-4">
 						<div class="card-header">
-							<i class="fas fa-table mr-1"></i> Mantenedor Residentes
+							<i class="fas fa-table mr-1"></i> Mantenedor Reservas de Espacios Edificio
 						</div>
 						<div class="card-body">
 							<div class="table-responsive">
 								<form class="needs-validation" novalidate>
 									<div class="form-row">
+										<div class="form-group col-md-2">
+										      <label for="inputDepartamento">Espacio</label>
+										      <select id="inputDepartamento" class="form-control">
+										        <option selected>Seleccione...</option>
+										        <option>Quincho</option>
+										        <option>Salon</option>
+										      </select>
+										</div>
 										<div class="col-md-3 mb-3">
-											<label for="validationCustom01">Nombre</label> <input
-												type="text" class="form-control" id="validationCustom01"
-												placeholder="nombre" value="" required>
+											<label for="validationCustom02">Fecha</label> <input
+												type="date" name="fecha" class="form-control" id="validationCustom02"
+												placeholder="fecha" value="" required>
+													<div class="valid-feedback">Looks good!</div>
+										</div>
+										<div class="col-md-3 mb-3">
+											<label for="validationCustom02">Hora Inicio</label> <input
+												type="time" class="form-control" id="validationCustom02"
+												placeholder="horaInicio" value="" required>
 											<div class="valid-feedback">Looks good!</div>
 										</div>
 										<div class="col-md-3 mb-3">
-											<label for="validationCustom02">Apellido</label> <input
-												type="text" class="form-control" id="validationCustom02"
-												placeholder="apellido" value="" required>
+											<label for="validationCustom02">Hora Termino</label> <input
+												type="time" class="form-control" id="validationCustom02"
+												placeholder="horaFin" value="" required>
 											<div class="valid-feedback">Looks good!</div>
 										</div>
-										<div class="col-md-3 mb-3">
-											<label for="validationCustom02">Rut</label> <input
-												type="text" class="form-control" id="validationCustom02"
-												placeholder="rut" value="" required>
-											<div class="valid-feedback">Looks good!</div>
-										</div>
-										<div class="col-md-3 mb-3">
-											<label for="validationCustom02">Telefono</label> <input
-												type="text" class="form-control" id="validationCustom02"
-												placeholder="telefono" value="" required>
-											<div class="valid-feedback">Looks good!</div>
-										</div>
-										<div class="col-md-3 mb-3">
-											<label for="validationCustom02">Correo</label> <input
-												type="text" class="form-control" id="validationCustom02"
-												placeholder="correo" value="" required>
-											<div class="valid-feedback">Looks good!</div>
-										</div>
-										<div class="col-md-3 mb-3">
-											<label for="validationCustom02">Contraseña</label> <input
-												type="text" class="form-control" id="validationCustom02"
-												placeholder="contrasenia" value="" required>
-											<div class="valid-feedback">Looks good!</div>
-										</div>
-										    <div class="form-group col-md-1">
+										<div class="form-group col-md-2">
 										      <label for="inputDepartamento">Departamento</label>
 										      <select id="inputDepartamento" class="form-control">
 										        <option selected>Seleccione...</option>
 										        <option>101</option>
 										        <option>201</option>
 										      </select>
-										    </div>
+										</div>
+										<div class="form-group col-md-2">
+										      <label for="inputDepartamento">Estado</label>
+										      <select id="inputDepartamento" class="form-control">
+										        <option selected>Seleccione...</option>
+										        <option>En curso</option>
+										        <option>Terminado</option>
+										        <option>Suspendido</option>
+										      </select>
+										</div>
 									</div>
 									<div class="form-group">
 										<div class="form-check">
@@ -155,40 +156,39 @@
 									<thead>
 										<tr>
 											<th>ID</th>
-											<th>Nombre</th>
-											<th>Apellido</th>
-											<th>Rut</th>
-											<th>Telefono</th>
-											<th>Correo</th>
+											<th>Espacio</th>
+											<th>Fecha</th>
+											<th>Hora Inicio</th>
+											<th>Hora Termino</th>
 											<th>Depto</th>
+											<th>Estado</th>
 											<th>Accion</th>
 										</tr>
 									</thead>
 									<tfoot>
 										<tr>
 											<th>ID</th>
-											<th>Nombre</th>
-											<th>Apellido</th>
-											<th>Rut</th>
-											<th>Telefono</th>
-											<th>Correo</th>
+											<th>Espacio</th>
+											<th>Fecha</th>
+											<th>Hora Inicio</th>
+											<th>Hora Termino</th>
 											<th>Depto</th>
+											<th>Estado</th>
 											<th>Accion</th>
 										</tr>
 									</tfoot>
 									<tbody>
 										<tr>
 											<td>1</td>
-											<td>Modesto</td>
-											<td>Rosado</td>
-											<td>99999999-9</td>
-											<td>+56955555555</td>
-											<td>ignacio@gmail.com</td>
-											<td>101</td>
+											<td>Quincho</td>
+											<td>30-07-2020</td>
+											<td>19:05</td>
+											<td>21:30</td>
+											<td>102</td>
+											<td>En curso</td>
 											<td>
 												<div class="btn-group" role="group" aria-label="Basic example">
 												  <button type="button" class="btn btn-primary">Actualizar</button>
-												  <button type="button" class="btn btn-primary">Eliminar</button>
 
 												</div>
 											</td>

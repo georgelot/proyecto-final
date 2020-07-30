@@ -12,7 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Dashboard - Administrador</title>
+        <title>Dashboard - Empleados</title>
         <link href="css/styles.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
@@ -28,7 +28,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                    	<a class="dropdown-item" href='<c:out value="/indexAdmin" />'>Home</a>
+                    	<a class="dropdown-item" href='<c:out value="/indexEmpleados" />'>Home</a>
                         <a class="dropdown-item" href='<c:out value="/login" />'>Salir Sistema</a>
                     </div>
                 </li>
@@ -39,20 +39,22 @@
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
-                            <div class="sb-sidenav-menu-heading">Mantenedor Universal</div>
+                            <div class="sb-sidenav-menu-heading">Gestion Edificio</div>
                             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                                Mantenedor
+                                Contenedor
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href='<c:out value="/mantenedorResidentes" />'>Residentes</a>
-                                    <a class="nav-link" href='<c:out value="/mantenedorEmpleados" />'>Empleados</a>
+                                    <a class="nav-link" href='<c:out value="/registroVisitas" />'>Visitas</a>
+                                    <a class="nav-link" href='<c:out value="/registoEncomiendas" />'>Encomiendas</a>
+                                    <a class="nav-link" href='<c:out value="/mantenedorEmpleados" />'>Reservas</a>
+                                    <a class="nav-link" href='<c:out value="/actualizaEmpleado" />'>Mis Datos</a>
                                 </nav>
                             </div>
                             <div class="sb-sidenav-menu-heading">Noticias</div>
-                            <a class="nav-link" href="https://www.facebook.com/"></pre>
+                            <a class="nav-link" href="https://www.facebook.com/">
                                 <div class="sb-nav-link-icon"><i class="fab fa-facebook-f"></i></div>
                                 Facebook
                             </a>
@@ -65,19 +67,19 @@
                     </div>
                     <div class="sb-sidenav-footer">
                         <div class="small">Autenticado como:</div>
-                        Administrador Edificio
+                        Conserje Edificio
                     </div>
                 </nav>
             </div>
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid">
-                        <h1 class="mt-4">ACA PONDRE LOS DATOS DE LA COMUNIDAD</h1>
+                        <h1 class="mt-4">Noticias para conserjes, datos empresa y telefonos de emergencia</h1>
        
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-table mr-1"></i>
-                                DATOS DE LA COMUNIDAD
+                                DATOS DE CONTACTO EN GENERAL, COMITE, VARIOS, ETC, ETC
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">

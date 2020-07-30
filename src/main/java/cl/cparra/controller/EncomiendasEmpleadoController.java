@@ -5,13 +5,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/mantenedorResidentes")
-public class ResidenteController {
+@RequestMapping("/registoEncomiendas")
+public class EncomiendasEmpleadoController {
 	
 	@GetMapping
-	public String crudResidentes() {
-		String crudResidentes = "mantenedorResidentes";
-		return crudResidentes;
+	public String registoEncomiendas() {
+		String registoEncomiendas = "registoEncomiendas";
+		return registoEncomiendas;
 	}
 
 }

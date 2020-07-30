@@ -39,8 +39,9 @@
                                                 </div>
                                             </div>
                                             <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
-                                                <a class="small" href="password.html">Olvido su contraseña?</a>
-                                                <a class="btn btn-primary" href='<c:out value="/indexAdmin" />'>Login</a>
+                                                <a class="btn btn-primary" href='<c:out value="/indexAdmin" />'>Login de Administracion</a>
+                                                <a class="btn btn-primary" href='<c:out value="/indexEmpleados" />'>Login de Empleados</a>
+                                                <a class="btn btn-primary" href='<c:out value="/indexAdmin" />'>Login de Residentes</a>
                                             </div>
                                         </form>
                                     </div>
