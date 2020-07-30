@@ -5,12 +5,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/registro")
-public class RegistroController {
+@RequestMapping("/actualizaResidente")
+public class ResidentePerfilController {
 
 	@GetMapping
-	public String registro() {
-		String registro = "registro";
-		return registro;
+	public String actualizaResidente() {
+		String actualizaResidente = "actualizaResidente";
+		return actualizaResidente;
 	}
 }
