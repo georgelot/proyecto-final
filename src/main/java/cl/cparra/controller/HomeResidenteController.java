@@ -5,13 +5,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/indexEmpleados")
-public class EmpleadoController {
+@RequestMapping("/indexResidentes")
+public class HomeResidenteController {
 	
 	@GetMapping
-	public String indexEmpleados() {
-		String indexEmpleados = "indexEmpleados";
-		return indexEmpleados;
+	public String indexResidentes() {
+		String indexResidentes = "indexResidentes";
+		return indexResidentes;
 	}
 
 }

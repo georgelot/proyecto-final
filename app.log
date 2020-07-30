@@ -178,3 +178,61 @@
 2020-07-30 01:14:59.156  INFO 10616 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-10].[localhost].[/]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-30 01:14:59.157  INFO 10616 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-30 01:14:59.158  INFO 10616 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2020-07-30 01:26:12.048  INFO 10616 --- [Thread-429] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-30 01:26:12.142  INFO 10616 --- [restartedMain] cl.cparra.AdminedificioApplication       : Starting AdminedificioApplication using Java 1.8.0_261 on LAPTOP-VJC97MUU with PID 10616 (C:\Users\Cesar Parra\Documents\workspace-spring\adminedificio\target\classes started by Cesar Parra in C:\Users\Cesar Parra\Documents\workspace-spring\adminedificio)
+2020-07-30 01:26:12.143  INFO 10616 --- [restartedMain] cl.cparra.AdminedificioApplication       : No active profile set, falling back to default profiles: default
+2020-07-30 01:26:12.347  INFO 10616 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-30 01:26:12.348  INFO 10616 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-30 01:26:12.348  INFO 10616 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-30 01:26:12.402  INFO 10616 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-07-30 01:26:12.404  INFO 10616 --- [restartedMain] o.a.c.c.C.[Tomcat-10].[localhost].[/]    : Initializing Spring embedded WebApplicationContext
+2020-07-30 01:26:12.404  INFO 10616 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 260 ms
+2020-07-30 01:26:12.480  INFO 10616 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-30 01:26:12.529  INFO 10616 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-30 01:26:12.535  INFO 10616 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-30 01:26:12.539  INFO 10616 --- [restartedMain] cl.cparra.AdminedificioApplication       : Started AdminedificioApplication in 0.416 seconds (JVM running for 47476.909)
+2020-07-30 01:26:12.540  INFO 10616 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-30 01:26:38.676  INFO 10616 --- [Thread-436] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-30 01:26:38.741  INFO 10616 --- [restartedMain] cl.cparra.AdminedificioApplication       : Starting AdminedificioApplication using Java 1.8.0_261 on LAPTOP-VJC97MUU with PID 10616 (C:\Users\Cesar Parra\Documents\workspace-spring\adminedificio\target\classes started by Cesar Parra in C:\Users\Cesar Parra\Documents\workspace-spring\adminedificio)
+2020-07-30 01:26:38.741  INFO 10616 --- [restartedMain] cl.cparra.AdminedificioApplication       : No active profile set, falling back to default profiles: default
+2020-07-30 01:26:38.905  INFO 10616 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-30 01:26:38.905  INFO 10616 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-30 01:26:38.905  INFO 10616 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-30 01:26:38.944  INFO 10616 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-07-30 01:26:38.945  INFO 10616 --- [restartedMain] o.a.c.c.C.[Tomcat-10].[localhost].[/]    : Initializing Spring embedded WebApplicationContext
+2020-07-30 01:26:38.945  INFO 10616 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 202 ms
+2020-07-30 01:26:38.985  INFO 10616 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-30 01:26:39.016  INFO 10616 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-30 01:26:39.022  INFO 10616 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-30 01:26:39.024  INFO 10616 --- [restartedMain] cl.cparra.AdminedificioApplication       : Started AdminedificioApplication in 0.301 seconds (JVM running for 47503.394)
+2020-07-30 01:26:39.025  INFO 10616 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-30 01:26:53.856  INFO 10616 --- [Thread-443] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-30 01:26:53.924  INFO 10616 --- [restartedMain] cl.cparra.AdminedificioApplication       : Starting AdminedificioApplication using Java 1.8.0_261 on LAPTOP-VJC97MUU with PID 10616 (C:\Users\Cesar Parra\Documents\workspace-spring\adminedificio\target\classes started by Cesar Parra in C:\Users\Cesar Parra\Documents\workspace-spring\adminedificio)
+2020-07-30 01:26:53.925  INFO 10616 --- [restartedMain] cl.cparra.AdminedificioApplication       : No active profile set, falling back to default profiles: default
+2020-07-30 01:26:54.088  INFO 10616 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-30 01:26:54.089  INFO 10616 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-30 01:26:54.089  INFO 10616 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-30 01:26:54.120  INFO 10616 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-07-30 01:26:54.121  INFO 10616 --- [restartedMain] o.a.c.c.C.[Tomcat-10].[localhost].[/]    : Initializing Spring embedded WebApplicationContext
+2020-07-30 01:26:54.121  INFO 10616 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 195 ms
+2020-07-30 01:26:54.159  INFO 10616 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-30 01:26:54.193  INFO 10616 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-30 01:26:54.200  INFO 10616 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-30 01:26:54.204  INFO 10616 --- [restartedMain] cl.cparra.AdminedificioApplication       : Started AdminedificioApplication in 0.3 seconds (JVM running for 47518.573)
+2020-07-30 01:26:54.205  INFO 10616 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-30 01:27:35.636  INFO 10616 --- [Thread-450] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-30 01:27:35.707  INFO 10616 --- [restartedMain] cl.cparra.AdminedificioApplication       : Starting AdminedificioApplication using Java 1.8.0_261 on LAPTOP-VJC97MUU with PID 10616 (C:\Users\Cesar Parra\Documents\workspace-spring\adminedificio\target\classes started by Cesar Parra in C:\Users\Cesar Parra\Documents\workspace-spring\adminedificio)
+2020-07-30 01:27:35.707  INFO 10616 --- [restartedMain] cl.cparra.AdminedificioApplication       : No active profile set, falling back to default profiles: default
+2020-07-30 01:27:35.866  INFO 10616 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-30 01:27:35.866  INFO 10616 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-30 01:27:35.867  INFO 10616 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-30 01:27:35.902  INFO 10616 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-07-30 01:27:35.903  INFO 10616 --- [restartedMain] o.a.c.c.C.[Tomcat-10].[localhost].[/]    : Initializing Spring embedded WebApplicationContext
+2020-07-30 01:27:35.903  INFO 10616 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 195 ms
+2020-07-30 01:27:35.945  INFO 10616 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-30 01:27:35.978  INFO 10616 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-07-30 01:27:35.984  INFO 10616 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-30 01:27:35.987  INFO 10616 --- [restartedMain] cl.cparra.AdminedificioApplication       : Started AdminedificioApplication in 0.293 seconds (JVM running for 47560.356)
+2020-07-30 01:27:35.988  INFO 10616 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-07-30 01:32:20.210  INFO 10616 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-10].[localhost].[/]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-30 01:32:20.212  INFO 10616 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
