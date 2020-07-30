@@ -5,12 +5,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/")
-public class HomeController {
-	
-	@GetMapping({"","/","/login"})
-	public String login() {
-		String login = "login";
-		return login;
+@RequestMapping("/mantenedorConserjes")
+public class ConserjeController {
+
+	@GetMapping
+	public String crudConserjes() {
+		String mantenedorConserjes = "mantenedorConserjes";
+		return mantenedorConserjes;
 	}
 }

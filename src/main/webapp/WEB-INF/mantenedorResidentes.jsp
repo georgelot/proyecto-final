@@ -67,7 +67,7 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid">
-                        <h1 class="mt-4">Maestro de Personas</h1>
+                        <h1 class="mt-4">Maestro de Residentes</h1>
        
                         <div class="card mb-4">
                             <div class="card-header">
