@@ -1,6 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<!-- datatables inicio -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/jq-3.3.1/jszip-2.5.0/dt-1.10.21/b-1.6.2/b-flash-1.6.2/b-html5-1.6.2/b-print-1.6.2/datatables.min.css"/>
+<!-- datatables fin -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -25,7 +28,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                        <a class="dropdown-item" href="login.html">Salir Sistema</a>
+                        <a class="dropdown-item" href='<c:out value="/login" />'>Salir Sistema</a>
                     </div>
                 </li>
             </ul>
@@ -44,18 +47,19 @@
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
                                     <a class="nav-link" href='<c:out value="/mantenedorResidentes" />'>Residentes</a>
-                                    <a class="nav-link" href='<c:out value="/mantenedorConserjes" />'>Conserjes</a>
+                                    <a class="nav-link" href='<c:out value="/mantenedorConserjes" />'>Empleados</a>
                                 </nav>
                             </div>
-                            <div class="sb-sidenav-menu-heading">Listar</div>
-                            <a class="nav-link" href="charts.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-address-book"></i></div>
-                                Listar Residentes
+                            <div class="sb-sidenav-menu-heading">Noticias</div>
+                            <a class="nav-link" href="https://www.facebook.com/">
+                                <div class="sb-nav-link-icon"><i class="fab fa-facebook-f"></i></div>
+                                Facebook
                             </a>
-                            <a class="nav-link" href="tables.html">
+                            <a class="nav-link" href="https://www.gob.cl/coronavirus/cifrasoficiales/">
                                 <div class="sb-nav-link-icon"><i class="fas fa-address-book"></i></div>
-                                Listar Conserjes
+                                Noticias COVID
                             </a>
+
                         </div>
                     </div>
                     <div class="sb-sidenav-footer">
@@ -76,38 +80,6 @@
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">
-                                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                        <thead>
-                                            <tr>
-                                                <th>Nombre</th>
-                                                <th>Apellido</th>
-                                                <th>Rut</th>
-                                                <th>Telefono</th>
-                                                <th>Correo</th>
-                                                <th>Password</th>
-                                            </tr>
-                                        </thead>
-                                        <tfoot>
-                                            <tr>
-                                                <th>Nombre</th>
-                                                <th>Apellido</th>
-                                                <th>Rut</th>
-                                                <th>Telefono</th>
-                                                <th>Correo</th>
-                                                <th>Password</th>
-                                            </tr>
-                                        </tfoot>
-                                        <tbody>
-                                            <tr>
-                                                <td>Ignacio</td>
-                                                <td>Parra</td>
-                                                <td>99999999-9</td>
-                                                <td>+56955111634</td>
-                                                <td>ignacio@gmail.com</td>
-                                                <td>,.-Dsae12hGfdf</td>
-                                            </tr>
-                                         </tbody>
-                                    </table>
                                 </div>
                             </div>
                         </div>
