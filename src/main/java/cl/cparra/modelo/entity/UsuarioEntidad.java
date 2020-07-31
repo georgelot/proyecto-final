@@ -28,5 +28,6 @@ public class UsuarioEntidad {
 	    private String telefono;
 	    private String correo;
 	    private String contrasenia;
+	    
 	    //ver rol de administrador, empleado y residente
 }

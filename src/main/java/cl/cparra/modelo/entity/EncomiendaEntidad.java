@@ -17,7 +17,7 @@ import lombok.ToString;
 @Data
 @Entity
 @Table(name = "encomiendas")
-public class EcomiendaEntidad {
+public class EncomiendaEntidad {
 
 	@Id
     @GeneratedValue(strategy = GenerationType.AUTO)
