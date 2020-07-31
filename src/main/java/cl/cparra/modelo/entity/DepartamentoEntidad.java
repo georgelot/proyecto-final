@@ -22,7 +22,7 @@ public class DepartamentoEntidad {
 		@Id
 	    @GeneratedValue(strategy = GenerationType.AUTO)
 	    private Integer id;
-		private String numero;
+		private Integer numero;
 		//referencia usuario entidad
 		//private UsuarioEntidad usuario;
 }

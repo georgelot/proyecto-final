@@ -24,9 +24,9 @@ public class VisitaEntidad {
     private Integer id;
     private String nombre;
     private String apellido;
-    private String dapartamento;
-    private String fecha;
-    private String horaIngreso;
-    private String horaSalida;
+    private Integer dapartamento;
+    private Integer fecha;
+    private Integer horaIngreso;
+    private Integer horaSalida;
 }
 
