@@ -33,7 +33,7 @@ public class UsuarioMapper implements RowMapper<UsuarioEntidad>{
 		usuario.setTelefono(telefono);
 		usuario.setCorreo(correo);
 		usuario.setContrasenia(contrasenia);
-		log.info("RowMap usuario ok " + usuario);		
+		log.info("RowMap usuario ok " + usuario + contrasenia);		
 		return usuario;
 		
 	}

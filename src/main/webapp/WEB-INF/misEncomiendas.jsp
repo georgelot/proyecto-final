@@ -42,13 +42,13 @@
                             <div class="sb-sidenav-menu-heading">Gestor de Eventos</div>
                             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i>
-                                </div>Contenedor
+                                </div>Residentes
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href='<c:out value="/registrarVisitas" />'>Agendar mis Visitas</a>
-                                    <a class="nav-link" href='<c:out value="/reservarEspacios" />'>Reservar Espacios</a>
+                                    <a class="nav-link" href='<c:out value="/misVisitas" />'>Agendar mis Visitas</a>
+                                    <a class="nav-link" href='<c:out value="/misEspacios" />'>Reservar Espacios</a>
                                     <a class="nav-link" href='<c:out value="/misEncomiendas" />'>Mis Encomiendas</a>
                                     <a class="nav-link" href='<c:out value="/actualizaResidente" />'>Actualizar Perfil</a>
                                 </nav>

@@ -42,13 +42,39 @@
                             <div class="sb-sidenav-menu-heading">Mantenedor Universal</div>
                             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                                Mantenedor
+                                Administracion
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
                                 	<a class="nav-link" href='<c:out value="/mantenedorResidentes" />'>Residentes</a>
                                     <a class="nav-link" href='<c:out value="/mantenedorEmpleados" />'>Empleados</a>
+                                </nav>
+                            </div>
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Conserjeria
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                	<a class="nav-link" href='<c:out value="/registroVisitas" />'>Visitas</a>
+                                    <a class="nav-link" href='<c:out value="/registoEncomiendas" />'>Encomiendas</a>
+                                    <a class="nav-link" href='<c:out value="/mantenedorEmpleados" />'>Reservas</a>
+                                    <a class="nav-link" href='<c:out value="/actualizaEmpleado" />'>Mis Datos</a>
+                                </nav>
+                            </div>
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Residentes
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                	<a class="nav-link" href='<c:out value="/misVisitas" />'>Agendar mis Visitas</a>
+                                    <a class="nav-link" href='<c:out value="/misEspacios" />'>Reservar Espacios</a>
+                                    <a class="nav-link" href='<c:out value="/misEncomiendas" />'>Mis Encomiendas</a>
+                                    <a class="nav-link" href='<c:out value="/actualizaResidente" />'>Actualizar Perfil</a>
                                 </nav>
                             </div>
                             <div class="sb-sidenav-menu-heading">Noticias</div>

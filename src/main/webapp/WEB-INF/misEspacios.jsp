@@ -64,8 +64,8 @@
 						<div class="collapse" id="collapseLayouts"
 							aria-labelledby="headingOne" data-parent="#sidenavAccordion">
 							<nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href='<c:out value="/registrarVisitas" />'>Agendar mis Visitas</a>
-                                    <a class="nav-link" href='<c:out value="/reservarEspacios" />'>Reservar Espacios</a>
+                                    <a class="nav-link" href='<c:out value="/misVisitas" />'>Agendar mis Visitas</a>
+                                    <a class="nav-link" href='<c:out value="/misEspacios" />'>Reservar Espacios</a>
                                     <a class="nav-link" href='<c:out value="/misEncomiendas" />'>Mis Encomiendas</a>
                                     <a class="nav-link" href='<c:out value="/actualizaResidente" />'>Actualizar Perfil</a>
 							</nav>

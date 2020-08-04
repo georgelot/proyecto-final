@@ -7,15 +7,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/reservarEspacios")
+@RequestMapping("/misEspacios")
 public class ResidentesReservasController {
 	
 	private static final Logger log = LoggerFactory.getLogger(ResidentesReservasController.class);
 	
 	@GetMapping
 	public String reservarEspacios() {
-		String reservarEspacios = "reservarEspacios";
+		String misEspacios = "misEspacios";
 		log.info("ok");
-		return reservarEspacios;
+		return misEspacios;
 	}
 }

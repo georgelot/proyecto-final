@@ -7,15 +7,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/")
+@RequestMapping("/index")
 public class HomeController {
 	
 	private static final Logger log = LoggerFactory.getLogger(HomeController.class);
 
-	@GetMapping({"","/","/login"})
+	@GetMapping("/index")
 	public String login() {
-		String login = "login";
+		String index = "index";
 		log.info("ok");
-		return login;
+		return index;
 	}
 }

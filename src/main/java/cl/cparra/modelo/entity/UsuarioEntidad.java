@@ -1,14 +1,13 @@
 package cl.cparra.modelo.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToMany;
-import javax.persistence.MapsId;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
@@ -34,28 +33,42 @@ public class UsuarioEntidad {
 	 	private String telefono;
 	 	private String correo;
 	 	private String contrasenia;
+	 	 private Role rol;
 	 	
-	 	@OneToMany
-	 	@MapsId("departamento_id")
-		@JoinColumn(name = "departamento_id")
-	 	List<DepartamentoEntidad> departamento;
 	 	
-	 	@OneToMany
-	 	@MapsId("encomienda_id")
-		@JoinColumn(name = "encomienda_id")
-	 	List<EncomiendaEntidad> encomienda;
 	 	
-	 	@ManyToMany
-	 	@MapsId("evento_id")
-		@JoinColumn(name = "evento_id")
-	 	List<EventoEntidad> evento;
+	 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "usuario", orphanRemoval = true)
+	 	List<DepartamentoEntidad> departamento = new ArrayList<>();
 	 	
-	 	@OneToMany
-	 	@MapsId("visitas_id")
-		@JoinColumn(name = "visitas_id")
-	 	List<VisitaEntidad> visitas;
+	 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "usuario", orphanRemoval = true)
+	 	List<EncomiendaEntidad> encomienda = new ArrayList<>();
 	 	
+	 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "usuario", orphanRemoval = true)
+	 	List<EventoEntidad> evento = new ArrayList<>();
+	 	
+	 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "usuario", orphanRemoval = true)
+	 	List<VisitaEntidad> visitas = new ArrayList<>();
+	 	
+	 	
+	 	public UsuarioEntidad agregarDepartamento (DepartamentoEntidad departamentoIn) {
+	 			this.departamento.add(departamentoIn);
+	 			return this;
+	 			}
+		
+		public UsuarioEntidad agregarReserva (EventoEntidad eventoIn) {
+		 		this.evento.add(eventoIn);
+				return this;
+				}
+				
+		public UsuarioEntidad agregarEncomienda (EncomiendaEntidad encomiendaIn) {
+				this.encomienda.add(encomiendaIn);
+				return this;
+				}
+		
+		public UsuarioEntidad agregarVisita (VisitaEntidad visitaIn) {
+				this.visitas.add(visitaIn);
+				return this;
+			}
+		
+	 	}
 
-	 	
-	 	
-}

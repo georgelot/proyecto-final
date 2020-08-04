@@ -7,16 +7,16 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/registrarVisitas")
+@RequestMapping("/misVisitas")
 public class ResidenteVisitasController {
 	
 	private static final Logger log = LoggerFactory.getLogger(ResidenteVisitasController.class);
 	
 	@GetMapping
-	public String registrarVisitas() {
-		String registrarVisitas = "registrarVisitas";
+	public String misVisitas() {
+		String misVisitas = "misVisitas";
 		log.info("ok");
-		return registrarVisitas;
+		return misVisitas;
 	}
 
 }
