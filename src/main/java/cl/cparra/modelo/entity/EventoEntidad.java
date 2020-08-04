@@ -1,9 +1,15 @@
 package cl.cparra.modelo.entity;
 
+import java.util.List;
+
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
+import javax.persistence.MapsId;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
@@ -22,10 +28,14 @@ public class EventoEntidad {
 	@Id
     @GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
-	private String espacio;//quincho p piscina
+	private String espacio;
 	private Integer fecha;
 	private Integer horaInicio;
 	private Integer horaFin;
-	//listar departamentos
-	//listar estado, en curso, estado, suspendido
+	
+	@ManyToMany(fetch = FetchType.EAGER)
+	@MapsId("usuario_id")
+	@JoinColumn(name = "usuario_id")
+	List<UsuarioEntidad> usuario;
+		
 }

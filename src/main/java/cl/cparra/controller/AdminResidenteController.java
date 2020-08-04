@@ -18,5 +18,5 @@ public class AdminResidenteController {
 		log.info("cargado");
 		return crudResidentes;
 	}
-
+	
 }

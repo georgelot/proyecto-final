@@ -6,4 +6,5 @@ import cl.cparra.modelo.entity.VisitaEntidad;
 
 public interface VisitaDao extends JpaRepository<VisitaEntidad, Integer>{
 
+
 }

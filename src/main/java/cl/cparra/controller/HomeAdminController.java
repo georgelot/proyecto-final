@@ -7,8 +7,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+
 @Controller
-@RequestMapping("/indexAdmin")
+@RequestMapping(value = "/indexAdmin")
 public class HomeAdminController {
 	
 	private static final Logger log = LoggerFactory.getLogger(HomeAdminController.class);

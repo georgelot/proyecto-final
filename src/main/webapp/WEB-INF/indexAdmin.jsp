@@ -47,7 +47,7 @@
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href='<c:out value="/mantenedorResidentes" />'>Residentes</a>
+                                	<a class="nav-link" href='<c:out value="/mantenedorResidentes" />'>Residentes</a>
                                     <a class="nav-link" href='<c:out value="/mantenedorEmpleados" />'>Empleados</a>
                                 </nav>
                             </div>
