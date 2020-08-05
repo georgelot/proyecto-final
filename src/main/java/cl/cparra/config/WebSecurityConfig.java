@@ -1,11 +1,13 @@
 package cl.cparra.config;
 
 import org.springframework.boot.autoconfigure.security.servlet.PathRequest;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 
 @EnableWebSecurity
@@ -16,15 +18,15 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 	protected void configure(AuthenticationManagerBuilder auth) throws  Exception{
 		
 		String adminUsername = "admin@mail.cl";
-		String adnimPassword = "1234";
+		String adnimPassword = passwordEncoder().encode("1234");
 		String adminRole = "ADMIN";
 		
-		String userUsername = "user@mail.cl";
-		String userPassword = "1234";
+		String userUsername = "conserje@mail.cl";
+		String userPassword = passwordEncoder().encode("1234");
 		String userRole = "CONSERJE";
 		
-		String residentUsername = "resident@mail.cl";
-		String residentuserPassword = "1234";
+		String residentUsername = "residente@mail.cl";
+		String residentuserPassword = passwordEncoder().encode("1234");
 		String residentRole = "RESIDENTE";
 		
 		auth.inMemoryAuthentication().withUser(adminUsername).password(adnimPassword).roles(adminRole);
@@ -53,6 +55,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 		.defaultSuccessUrl("/")
 		.and().exceptionHandling().accessDeniedPage("/prohibido");
 		
+	}
+	
+	@Bean
+	public BCryptPasswordEncoder passwordEncoder() {
+		return new BCryptPasswordEncoder();
 	}
 
 }
