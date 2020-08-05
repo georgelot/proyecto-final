@@ -24,7 +24,7 @@
 	<error-page>
 		<!-- Forbidden directory listing -->
 		<error-code>403</error-code>
-		<location>/404</location>
+		<location>/403</location>
 	</error-page>
 	<error-page>
 	    <!-- Missing resource -->

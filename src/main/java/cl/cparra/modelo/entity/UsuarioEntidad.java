@@ -33,7 +33,7 @@ public class UsuarioEntidad {
 	 	private String telefono;
 	 	private String correo;
 	 	private String contrasenia;
-	 	 private Role rol;
+	 	private Role rol;
 	 	
 	 	
 	 	

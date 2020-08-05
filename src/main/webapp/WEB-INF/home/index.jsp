@@ -28,7 +28,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                    	<a class="dropdown-item" href='<c:out value="/indexAdmin" />'>Home</a>
+                    	<a class="dropdown-item" href='<c:out value="/home" />'>Home</a>
                         <a class="dropdown-item" href='<c:out value="/login" />'>Salir Sistema</a>
                     </div>
                 </li>
@@ -60,7 +60,7 @@
                                 <nav class="sb-sidenav-menu-nested nav">
                                 	<a class="nav-link" href='<c:out value="/registroVisitas" />'>Visitas</a>
                                     <a class="nav-link" href='<c:out value="/registoEncomiendas" />'>Encomiendas</a>
-                                    <a class="nav-link" href='<c:out value="/mantenedorEmpleados" />'>Reservas</a>
+                                    <a class="nav-link" href='<c:out value="/registroEventos" />'>Reservas</a>
                                     <a class="nav-link" href='<c:out value="/actualizaEmpleado" />'>Mis Datos</a>
                                 </nav>
                             </div>

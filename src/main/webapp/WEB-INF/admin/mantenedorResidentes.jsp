@@ -40,7 +40,7 @@
 				aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
 				<div class="dropdown-menu dropdown-menu-right"
 					aria-labelledby="userDropdown">
-					<a class="dropdown-item" href='<c:out value="/indexAdmin" />'>Home</a>
+					<a class="dropdown-item" href='<c:out value="/home" />'>Home</a>
 					<a class="dropdown-item" href='<c:out value="/login" />'>Salir Sistema</a>
 				</div></li>
 		</ul>
@@ -82,7 +82,7 @@
 				</div>
 				<div class="sb-sidenav-footer">
 					<div class="small">Autenticado como:</div>
-					Administrador Edificio
+					<c:out value = "${username}"></c:out>
 				</div>
 			</nav>
 		</div>
