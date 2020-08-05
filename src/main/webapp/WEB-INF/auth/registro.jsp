@@ -55,7 +55,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="form-group mt-4 mb-0"><a class="btn btn-primary btn-block" href="login.html">Create Account</a></div>
+                                            <div class="form-group mt-4 mb-0"><a class="btn btn-primary btn-block" href='<c:out value="/login" />'>Create Account</a></div>
                                         </form>
                                     </div>
                                     <div class="card-footer text-center">

@@ -24,4 +24,9 @@ public class LoginController {
 	public String prohibido() {
 		return "error/403";
 	}
+	
+	@GetMapping("/registro")
+	public String registro() {
+		return "auth/registro";
+	}
 }

@@ -25,6 +25,7 @@ public class UsuarioMapper implements RowMapper<UsuarioEntidad>{
 		String telefono = rs.getString("telefono");
 		String correo = rs.getString("correo");
 		String contrasenia = rs.getString("contrasenia");
+
 		
 		usuario.setId(id);
 		usuario.setNombre(nombre);
@@ -33,6 +34,7 @@ public class UsuarioMapper implements RowMapper<UsuarioEntidad>{
 		usuario.setTelefono(telefono);
 		usuario.setCorreo(correo);
 		usuario.setContrasenia(contrasenia);
+
 		log.info("RowMap usuario ok " + usuario + contrasenia);		
 		return usuario;
 		

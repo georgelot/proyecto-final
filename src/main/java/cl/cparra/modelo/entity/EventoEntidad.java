@@ -1,6 +1,6 @@
 package cl.cparra.modelo.entity;
 
-import java.util.List;
+import java.io.Serializable;
 
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -9,7 +9,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToMany;
-import javax.persistence.MapsId;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
@@ -23,8 +22,9 @@ import lombok.ToString;
 @Data
 @Entity
 @Table(name = "evento")
-public class EventoEntidad {
-
+public class EventoEntidad implements Serializable{
+	private static final long serialVersionUID = -8078287241529013369L;
+	
 	@Id
     @GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
@@ -33,9 +33,8 @@ public class EventoEntidad {
 	private Integer horaInicio;
 	private Integer horaFin;
 	
-	@ManyToMany(fetch = FetchType.EAGER)
-	@MapsId("usuario_id")
+	@ManyToMany(fetch = FetchType.LAZY)
 	@JoinColumn(name = "usuario_id")
-	List<UsuarioEntidad> usuario;
+	private UsuarioEntidad usuario;
 		
 }
