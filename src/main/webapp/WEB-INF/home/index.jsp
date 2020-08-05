@@ -92,7 +92,7 @@
                     <div class="sb-sidenav-footer">
                         <div class="small">Autenticado como:</div>
                         <c:out value = "${username}"></c:out>
-                     </div>
+                    </div>
                 </nav>
             </div>
             <div id="layoutSidenav_content">

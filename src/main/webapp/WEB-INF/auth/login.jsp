@@ -23,14 +23,22 @@
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
                                     <div class="card-header"><h3 class="text-center font-weight-light my-4">Login</h3></div>
                                     <div class="card-body">
-                                        <form>
+                                    	<c:if test="${error}">
+                                    		<div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                    			<strong>¡Error!</strong>credenciales invalidas
+                                    			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    				<span aria-hidden="true">&times;</span>
+                                    			</button>
+                                    		</div>
+                                    	</c:if>
+                                        <form action ="<c:url value='/login'/>" method="post">
                                             <div class="form-group">
                                                 <label class="small mb-1" for="inputEmailAddress">Email</label>
-                                                <input class="form-control py-4" id="inputEmailAddress" type="email" placeholder="Ingrese su email" />
+                                                <input class="form-control py-4" id="email" name="email" type="email" placeholder="Ingrese su email" />
                                             </div>
                                             <div class="form-group">
                                                 <label class="small mb-1" for="inputPassword">Password</label>
-                                                <input class="form-control py-4" id="inputPassword" type="password" placeholder="Ingrese su password" />
+                                                <input class="form-control py-4" id="password" name="password" type="password" placeholder="Ingrese su password" />
                                             </div>
                                             <div class="form-group">
                                                 <div class="custom-control custom-checkbox">
@@ -39,7 +47,7 @@
                                                 </div>
                                             </div>
                                             <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
-                                                <a class="btn btn-primary" href='<c:out value="/index" />'>Login de Administracion</a>
+                                                <a class="btn btn-primary" href='<c:out value="/index" />'>Ingresar</a>
                                             </div>
                                         </form>
                                     </div>
