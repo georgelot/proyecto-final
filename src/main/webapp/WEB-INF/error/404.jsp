@@ -23,10 +23,7 @@
                                 <div class="text-center mt-4">
                                     <img class="mb-4 img-error" src="assets/img/error-404-monochrome.svg" />
                                     <p class="lead">Esta URL solicitada no se encontró en este servidor.</p>
-                                    <a href='<c:out value="/login" />'>
-                                        <i class="fas fa-arrow-left mr-1"></i>
-                                        Inicia sesion nuevamente
-                                    </a>
+                                    <a href='<c:out value="/login" />'><i class="fas fa-arrow-left mr-1"></i>Inicia sesion nuevamente</a>
                                 </div>
                             </div>
                         </div>

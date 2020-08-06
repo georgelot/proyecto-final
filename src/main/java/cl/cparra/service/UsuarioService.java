@@ -9,7 +9,6 @@ import cl.cparra.modelo.dao.UsuarioDao;
 import cl.cparra.modelo.entity.UsuarioEntidad;
 
 public class UsuarioService {
-
 	private static final Logger log = LoggerFactory.getLogger(UsuarioService.class);
 
 	@Autowired

@@ -1,14 +1,13 @@
 package cl.cparra.modelo.entity;
 
 import java.io.Serializable;
-
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
@@ -33,7 +32,7 @@ public class EventoEntidad implements Serializable{
 	private Integer horaInicio;
 	private Integer horaFin;
 	
-	@ManyToMany(fetch = FetchType.LAZY)
+	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "usuario_id")
 	private UsuarioEntidad usuario;
 		

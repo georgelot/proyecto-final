@@ -9,7 +9,6 @@ import cl.cparra.modelo.dao.EventoDao;
 import cl.cparra.modelo.entity.EventoEntidad;
 
 public class EventoService {
-
 	private static final Logger log = LoggerFactory.getLogger(EventoService.class);
 
 	@Autowired
@@ -25,8 +24,8 @@ public class EventoService {
 		evento.getFecha();
 		evento.getHoraInicio();
 		evento.getHoraFin();
-		evento.getUsuario();
 		log.info("Insertado ok" + evento);
 
 		}
 }
+

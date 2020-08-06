@@ -85,37 +85,37 @@
 											<label for="validationCustom01">Nombre</label> <input
 												type="text" class="form-control" id="validationCustom01"
 												placeholder="nombre" value="" required>
-											<div class="valid-feedback">Looks good!</div>
+											<div class="valid-feedback">Se ve bien!</div>
 										</div>
 										<div class="col-md-3 mb-3">
 											<label for="validationCustom02">Apellido</label> <input
 												type="text" class="form-control" id="validationCustom02"
 												placeholder="apellido" value="" required>
-											<div class="valid-feedback">Looks good!</div>
+											<div class="valid-feedback">Se ve bien!</div>
 										</div>
 										<div class="col-md-3 mb-3">
 											<label for="validationCustom02">Rut</label> <input
 												type="text" class="form-control" id="validationCustom02"
 												placeholder="rut" value="" required>
-											<div class="valid-feedback">Looks good!</div>
+											<div class="valid-feedback">Se ve bien!</div>
 										</div>
 										<div class="col-md-3 mb-3">
 											<label for="validationCustom02">Telefono</label> <input
 												type="text" class="form-control" id="validationCustom02"
 												placeholder="telefono" value="" required>
-											<div class="valid-feedback">Looks good!</div>
+											<div class="valid-feedback">Se ve bien!</div>
 										</div>
 										<div class="col-md-3 mb-3">
 											<label for="validationCustom02">Correo</label> <input
 												type="text" class="form-control" id="validationCustom02"
 												placeholder="correo" value="" required>
-											<div class="valid-feedback">Looks good!</div>
+											<div class="valid-feedback">Se ve bien!</div>
 										</div>
 										<div class="col-md-3 mb-3">
 											<label for="validationCustom02">Contraseña</label> <input
 												type="text" class="form-control" id="validationCustom02"
 												placeholder="contrasenia" value="" required>
-											<div class="valid-feedback">Looks good!</div>
+											<div class="valid-feedback">Se ve bien!</div>
 										</div>
 										    <div class="form-group col-md-1">
 										      <label for="inputDepartamento">Rol</label>

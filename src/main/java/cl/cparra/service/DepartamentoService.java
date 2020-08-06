@@ -21,8 +21,7 @@ public class DepartamentoService {
 	 
 	 public void insertarDepartamento(DepartamentoEntidad departamento) {
 			departamento.getNumero();
-			departamento.getUsuario();
 			log.info("Insertado ok" + departamento);
 
-		}
+	}
 }

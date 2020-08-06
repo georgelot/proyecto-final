@@ -37,7 +37,7 @@ public class UsuarioEntidad implements Serializable {
 	private String contrasenia;
 	private Role rol;
 
-	@OneToMany(cascade = CascadeType.ALL, mappedBy = "usuario", orphanRemoval = true)
+	@OneToMany(cascade = CascadeType.ALL, mappedBy = "numero", orphanRemoval = true)
 	List<DepartamentoEntidad> departamentos = new ArrayList<>();
 
 	// helpers
@@ -61,7 +61,7 @@ public class UsuarioEntidad implements Serializable {
 		return this;
 	}
 
-	@OneToMany(cascade = CascadeType.ALL, mappedBy = "usuario", orphanRemoval = true)
+	@OneToMany(cascade = CascadeType.ALL, mappedBy = "espacio", orphanRemoval = true)
 	List<EventoEntidad> evento = new ArrayList<>();
 
 	public UsuarioEntidad agregarReserva(EventoEntidad eventoIn) {
@@ -84,7 +84,7 @@ public class UsuarioEntidad implements Serializable {
 		return this;
 	}
 
-	@OneToMany(cascade = CascadeType.ALL, mappedBy = "usuario", orphanRemoval = true)
+	@OneToMany(cascade = CascadeType.ALL, mappedBy = "nombre", orphanRemoval = true)
 	List<VisitaEntidad> visitas = new ArrayList<>();
 	
 	public UsuarioEntidad agregarVisita(VisitaEntidad visitaIn) {
@@ -107,7 +107,7 @@ public class UsuarioEntidad implements Serializable {
 		return this;
 	}
 
-	@OneToMany(cascade = CascadeType.ALL, mappedBy = "usuario", orphanRemoval = true)
+	@OneToMany(cascade = CascadeType.ALL, mappedBy = "proveedor", orphanRemoval = true)
 	List<EncomiendaEntidad> encomienda = new ArrayList<>();
 	
 	public UsuarioEntidad agregarEncomienda(EncomiendaEntidad encomiendaIn) {
@@ -129,5 +129,4 @@ public class UsuarioEntidad implements Serializable {
 		this.encomienda = null;
 		return this;
 	}
-
 }

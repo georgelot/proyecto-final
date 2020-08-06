@@ -9,7 +9,6 @@ import cl.cparra.modelo.dao.EncomiendaDao;
 import cl.cparra.modelo.entity.EncomiendaEntidad;
 
 public class EncomiendaService {
-
 	private static final Logger log = LoggerFactory.getLogger(EncomiendaService.class);
 
 	@Autowired
@@ -23,7 +22,6 @@ public class EncomiendaService {
 	 public void insertarDepartamento(EncomiendaEntidad encomienda) {
 		encomienda.getProveedor();
 		encomienda.getFecha();
-		encomienda.getUsuario();
 		log.info("Insertado ok" + encomienda);
 
 		}
