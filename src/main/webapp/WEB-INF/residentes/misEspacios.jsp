@@ -156,12 +156,13 @@
 										</tr>
 									</tfoot>
 									<tbody>
+									<c:forEach var="reservas" items="${reservas}">
 										<tr>
-											<td>1</td>
-											<td>Quincho</td>
-											<td>01-01-2020</td>
-											<td>12:00</td>
-											<td>13:45</td>
+											<td>${reservas.id}</td>
+											<td>${reservas.espacio}</td>
+											<td>${reservas.fecha}</td>
+											<td>${reservas.horaIn}</td>
+											<td>${reservas.horaOut}</td>
 											<td>
 												<div class="btn-group" role="group" aria-label="Basic example">
 												  <button type="button" class="btn btn-primary">Actualizar</button>
@@ -169,6 +170,7 @@
 												</div>
 											</td>
 										</tr>
+									</c:forEach>
 									</tbody>
 								</table>
 							</div>

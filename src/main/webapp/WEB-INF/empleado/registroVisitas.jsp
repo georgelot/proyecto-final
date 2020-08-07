@@ -173,21 +173,22 @@
 										</tr>
 									</tfoot>
 									<tbody>
+									<c:forEach var="visita" items="${visita}">
 										<tr>
-											<td>1</td>
-											<td>Modesto</td>
-											<td>Rosado</td>
-											<td>101</td>
-											<td>30-07-2020</td>
-											<td>19:05</td>
-											<td>21:30</td>
+											<td>${visita.id}</td>
+											<td>${visita.nombre}</td>
+											<td>${visita.apellido}</td>
+											<td>${visita.departamento}</td>
+											<td>${visita.fecha}</td>
+											<td>${visita.horaIn}</td>
+											<td>${visita.horaOut}</td>
 											<td>
 												<div class="btn-group" role="group" aria-label="Basic example">
 												  <button type="button" class="btn btn-primary">Hora Salida</button>
-
 												</div>
 											</td>
 										</tr>
+									</c:forEach>
 									</tbody>
 								</table>
 							</div>

@@ -30,7 +30,7 @@
 			<i class="fas fa-bars"></i>
 		</button>
 		<!-- Navbar Search-->
-		<form
+		<form action="/mantenedorResidentes" method="post"
 			class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0"></form>
 		<!-- Navbar-->
 		<ul class="navbar-nav ml-auto ml-md-0">
@@ -101,40 +101,47 @@
 									<div class="form-row">
 										<div class="col-md-3 mb-3">
 											<label for="validationCustom01">Nombre</label> <input
-												type="text" class="form-control" id="validationCustom01"
+												type="text" class="form-control" id="nombre" name="nombre"
 												placeholder="nombre" value="" required>
 											<div class="valid-feedback">Looks good!</div>
 										</div>
 										<div class="col-md-3 mb-3">
 											<label for="validationCustom02">Apellido</label> <input
-												type="text" class="form-control" id="validationCustom02"
+												type="text" class="form-control" id="apellido" name="apellido"
 												placeholder="apellido" value="" required>
 											<div class="valid-feedback">Looks good!</div>
 										</div>
 										<div class="col-md-3 mb-3">
 											<label for="validationCustom02">Rut</label> <input
-												type="text" class="form-control" id="validationCustom02"
+												type="text" class="form-control" id="rut" name="rut"
 												placeholder="rut" value="" required>
 											<div class="valid-feedback">Looks good!</div>
 										</div>
 										<div class="col-md-3 mb-3">
 											<label for="validationCustom02">Telefono</label> <input
-												type="text" class="form-control" id="validationCustom02"
+												type="text" class="form-control" id="telefono" name="telefono"
 												placeholder="telefono" value="" required>
 											<div class="valid-feedback">Looks good!</div>
 										</div>
 										<div class="col-md-3 mb-3">
 											<label for="validationCustom02">Correo</label> <input
-												type="text" class="form-control" id="validationCustom02"
+												type="text" class="form-control" id="correo" name="correo"
 												placeholder="correo" value="" required>
 											<div class="valid-feedback">Looks good!</div>
 										</div>
 										<div class="col-md-3 mb-3">
 											<label for="validationCustom02">Contraseña</label> <input
-												type="text" class="form-control" id="validationCustom02"
+												type="text" class="form-control" id="contrasenia" name="contrasenia"
 												placeholder="contrasenia" value="" required>
 											<div class="valid-feedback">Looks good!</div>
 										</div>
+										<div class="form-group col-md-2">
+										      <label for="inputDepartamento">Rol</label>
+										      <select id="inputDepartamento" class="form-control">
+										        <option selected>Seleccione...</option>
+										        <option>Residente</option>
+										      </select>
+										    </div>
 										    <div class="form-group col-md-1">
 										      <label for="inputDepartamento">Departamento</label>
 										      <select id="inputDepartamento" class="form-control">
@@ -177,14 +184,15 @@
 										</tr>
 									</tfoot>
 									<tbody>
+									<c:forEach var="usuario" items="${usuario}">
 										<tr>
-											<td>1</td>
-											<td>Modesto</td>
-											<td>Rosado</td>
-											<td>99999999-9</td>
-											<td>+56955555555</td>
-											<td>ignacio@gmail.com</td>
-											<td>101</td>
+											<td>${usuario.id}</td>
+											<td>${usuario.nombre}</td>
+											<td>${usuario.apellido}</td>
+											<td>${usuario.rut}</td>
+											<td>${usuario.telefono}</td>
+											<td>${usuario.correo}</td>
+											<td>${usuario.departamento}</td>
 											<td>
 												<div class="btn-group" role="group" aria-label="Basic example">
 												  <button type="button" class="btn btn-primary">Actualizar</button>
@@ -193,6 +201,7 @@
 												</div>
 											</td>
 										</tr>
+									</c:forEach>
 									</tbody>
 								</table>
 							</div>

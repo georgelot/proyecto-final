@@ -161,19 +161,20 @@
 										</tr>
 									</tfoot>
 									<tbody>
+										<c:forEach var="encomienda" items="${encomienda}">
 										<tr>
-											<td>1</td>
-											<td>102</td>
-											<td>Starken</td>
-											<td>30-07-2020</td>
-											<td>Recepcion</td>
+											<td>${encomienda.id}</td>
+											<td>${encomienda.departamento}</td>
+											<td>${encomienda.proveedor}</td>
+											<td>${encomienda.fecha}</td>
+											<td>${encomienda.estado}</td>
 											<td>
 												<div class="btn-group" role="group" aria-label="Basic example">
 												  <button type="button" class="btn btn-primary">Actualizar</button>
-
 												</div>
 											</td>
 										</tr>
+									</c:forEach>
 									</tbody>
 								</table>
 							</div>

@@ -70,6 +70,7 @@
                                                         <label class="small mb-1" for="inputLastName">Departamento</label>
                                                         	<select id="inputDepartamento" class="form-control">
 												        	<option selected>Seleccione...</option>
+												        	<option>001</option>
 												        	<option>101</option>
 												        	<option>201</option>
 												        	<option>301</option>
@@ -89,7 +90,9 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="form-group mt-4 mb-0"><a class="btn btn-primary btn-block" href='<c:out value="/login" />'>Creacion de Cuenta</a></div>
+                                            <div class="form-group mt-4 mb-0">
+                                            	<a class="btn btn-primary btn-block" href='<c:out value="/login" />'>Creacion de Cuenta</a>
+                                            </div>
                                         </form>
                                     </div>
                                     <div class="card-footer text-center">

@@ -22,7 +22,9 @@
             <a class="navbar-brand">Edificio Think</a>
             <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
-            <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0"></form>
+            <form action="/mantenedorEmpleados" method="post"
+            class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0"
+            ></form>
             <!-- Navbar-->
             <ul class="navbar-nav ml-auto ml-md-0">
                 <li class="nav-item dropdown">
@@ -83,46 +85,53 @@
 									<div class="form-row">
 										<div class="col-md-3 mb-3">
 											<label for="validationCustom01">Nombre</label> <input
-												type="text" class="form-control" id="validationCustom01"
+												type="text" class="form-control" id="nombre" name="nombre"
 												placeholder="nombre" value="" required>
 											<div class="valid-feedback">Se ve bien!</div>
 										</div>
 										<div class="col-md-3 mb-3">
 											<label for="validationCustom02">Apellido</label> <input
-												type="text" class="form-control" id="validationCustom02"
+												type="text" class="form-control" id="apellido" name="apellido"
 												placeholder="apellido" value="" required>
 											<div class="valid-feedback">Se ve bien!</div>
 										</div>
 										<div class="col-md-3 mb-3">
 											<label for="validationCustom02">Rut</label> <input
-												type="text" class="form-control" id="validationCustom02"
+												type="text" class="form-control" id="rut" name="rut"
 												placeholder="rut" value="" required>
 											<div class="valid-feedback">Se ve bien!</div>
 										</div>
 										<div class="col-md-3 mb-3">
 											<label for="validationCustom02">Telefono</label> <input
-												type="text" class="form-control" id="validationCustom02"
+												type="text" class="form-control" id="telefono" name="telefono"
 												placeholder="telefono" value="" required>
 											<div class="valid-feedback">Se ve bien!</div>
 										</div>
 										<div class="col-md-3 mb-3">
 											<label for="validationCustom02">Correo</label> <input
-												type="text" class="form-control" id="validationCustom02"
+												type="text" class="form-control" id="correo" name="correo"
 												placeholder="correo" value="" required>
 											<div class="valid-feedback">Se ve bien!</div>
 										</div>
 										<div class="col-md-3 mb-3">
 											<label for="validationCustom02">Contraseña</label> <input
-												type="text" class="form-control" id="validationCustom02"
+												type="text" class="form-control" id="contrasenia" name="contrasenia"
 												placeholder="contrasenia" value="" required>
 											<div class="valid-feedback">Se ve bien!</div>
 										</div>
-										    <div class="form-group col-md-1">
+										    <div class="form-group col-md-2">
 										      <label for="inputDepartamento">Rol</label>
 										      <select id="inputDepartamento" class="form-control">
 										        <option selected>Seleccione...</option>
 										        <option>Mayordomo</option>
 										        <option>Conserje</option>
+										      </select>
+										    </div>
+										    <div class="form-group col-md-1">
+										      <label for="inputDepartamento">Departamento</label>
+										      <select id="inputDepartamento" class="form-control">
+										        <option selected>Seleccione...</option>
+										        <option>N/A</option>
 										      </select>
 										    </div>
 									</div>
@@ -159,22 +168,23 @@
 										</tr>
 									</tfoot>
 									<tbody>
+									<c:forEach var="empleado" items="${empleado}">
 										<tr>
-											<td>1</td>
-											<td>Juanito</td>
-											<td>Perez</td>
-											<td>99999999-9</td>
-											<td>+56955555555</td>
-											<td>juanito@gmail.com</td>
-											<td>Conserje</td>
+											<td>${empleado.id}</td>
+											<td>${empleado.nombre}</td>
+											<td>${empleado.apellido}</td>
+											<td>${empleado.rut}</td>
+											<td>${empleado.telefono}</td>
+											<td>${empleado.correo}</td>
+											<td>${empleado.rol}</td>
 											<td>
 												<div class="btn-group" role="group" aria-label="Basic example">
-												  <button type="button" class="btn btn-primary">Actualizar</button>
-												  <button type="button" class="btn btn-primary">Eliminar</button>
-
+												  <button class="btn btn-primary" type="submit">Actualizar</button>
+												  <button class="btn btn-primary" type="submit">Eliminar</button>
 												</div>
 											</td>
 										</tr>
+									</c:forEach>
 									</tbody>
 								</table>
 							</div>

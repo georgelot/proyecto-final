@@ -148,19 +148,20 @@
 										</tr>
 									</tfoot>
 									<tbody>
+									<c:forEach var="residente" items="${residente}">
 										<tr>
-											<td>1</td>
-											<td>Perico</td>
-											<td>Los Palotes</td>
-											<td>perico@mail.com</td>
-											<td>+5699668855</td>
+											<td>${residente.id}</td>
+											<td>${residente.nombre}</td>
+											<td>${residente.apellido}</td>
+											<td>${residente.correo}</td>
+											<td>${residente.telefono}</td>
 											<td>
 												<div class="btn-group" role="group" aria-label="Basic example">
 												  <button type="button" class="btn btn-primary">Actualizar</button>
-
 												</div>
 											</td>
 										</tr>
+									</c:forEach>
 									</tbody>
 								</table>
 							</div>

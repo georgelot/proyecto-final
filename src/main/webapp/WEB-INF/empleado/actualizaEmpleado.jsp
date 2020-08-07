@@ -149,19 +149,20 @@
 										</tr>
 									</tfoot>
 									<tbody>
+									<c:forEach var="empleados" items="${empleados}">
 										<tr>
-											<td>1</td>
-											<td>Perico</td>
-											<td>Los Palotes</td>
-											<td>perico@mail.com</td>
-											<td>+5699668855</td>
+											<td>${empleados.id}</td>
+											<td>${empleados.nombre}</td>
+											<td>${empleados.apellido}</td>
+											<td>${empleados.correo}</td>
+											<td>${empleados.telefono}</td>
 											<td>
 												<div class="btn-group" role="group" aria-label="Basic example">
 												  <button type="button" class="btn btn-primary">Actualizar</button>
-
 												</div>
 											</td>
 										</tr>
+									</c:forEach>
 									</tbody>
 								</table>
 							</div>
@@ -196,6 +197,21 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
 	<script type="text/javascript" src="https://cdn.datatables.net/v/dt/jq-3.3.1/jszip-2.5.0/dt-1.10.21/b-1.6.2/b-flash-1.6.2/b-html5-1.6.2/b-print-1.6.2/datatables.min.js"></script>
 	<!-- datatables json completo fin -->
+	<script type="text/javascript">
+		const cdn = "http://cdn.datatables.net/plug-ins/1.10.21/i18n/Spanish.json"
+
+		$(document).ready(function(){
+				$('#dataTable').DataTable({
+					dom: 'Bfrtip',
+					buttons: [
+						'copy', 'csv', 'excel', 'pdf', 'print'
+							],
+						"language" : {
+							"url" : cdn
+							}
+						});
+					})			
+	</script>
 
 </body>
 </html>>

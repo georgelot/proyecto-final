@@ -8,11 +8,12 @@ import org.springframework.transaction.annotation.Transactional;
 import cl.cparra.modelo.dao.UsuarioDao;
 import cl.cparra.modelo.entity.UsuarioEntidad;
 
-public class UsuarioService {
-	private static final Logger log = LoggerFactory.getLogger(UsuarioService.class);
+public class ResidenteService {
+	private static final Logger log = LoggerFactory.getLogger(ResidenteService.class);
 
 	@Autowired
 	UsuarioDao usuarioDao;
+
 		
 	 @Transactional(readOnly = true)
 	 public List<UsuarioEntidad> getAll(){
@@ -27,6 +28,7 @@ public class UsuarioService {
 		usuario.getCorreo();
 		usuario.getContrasenia();
 		usuario.getRol();
+		usuario.getDepartamentos();
 		log.info("Insertado ok" + usuario);
 
 	}
@@ -39,7 +41,7 @@ public class UsuarioService {
 	}
 
 	public void actualizarUsuario(UsuarioEntidad usuario) {
-		log.info("actualizado ok");
+		log.info("Actualizado ok");
 		usuarioDao.save(usuario);
 	}
 

@@ -100,12 +100,14 @@
 										</tr>
 									</tfoot>
 									<tbody>
+									<c:forEach var="encomiendas" items="${encomiendas}">
 										<tr>
-											<td>1</td>
-											<td>Starken</td>
-											<td>30-07-2020</td>
-											<td>Entregado</td>
+											<td>${encomiendas.id}</td>
+											<td>${encomiendas.proveedor}</td>
+											<td>${encomiendas.fecha}</td>
+											<td>${encomiendas.estado}</td>
 										</tr>
+									</c:forEach>
 									</tbody>
 								</table>
 							</div>

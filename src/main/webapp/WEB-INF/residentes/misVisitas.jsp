@@ -154,19 +154,20 @@
 										</tr>
 									</tfoot>
 									<tbody>
+									<c:forEach var="visitas" items="${visitas}">
 										<tr>
-											<td>1</td>
-											<td>Modesto</td>
-											<td>Rosado</td>
-											<td>19:45</td>
-											<td>21:45</td>
+											<td>${visitas.id}</td>
+											<td>${visitas.nombre}</td>
+											<td>${visitas.apellido}</td>
+											<td>${visitas.horaIn}</td>
+											<td>${visitas.horaOut}</td>
 											<td>
 												<div class="btn-group" role="group" aria-label="Basic example">
 												  <button type="button" class="btn btn-primary">Hora Salida</button>
-
 												</div>
 											</td>
 										</tr>
+									</c:forEach>
 									</tbody>
 								</table>
 							</div>
