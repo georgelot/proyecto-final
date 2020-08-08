@@ -35,7 +35,7 @@ public class UsuarioMapper implements RowMapper<UsuarioEntidad>{
 		usuario.setCorreo(correo);
 		usuario.setContrasenia(contrasenia);
 
-		log.info("RowMap usuario ok " + usuario + contrasenia);		
+		log.info("RowMap usuario ok " + usuario);		
 		return usuario;
 		
 	}

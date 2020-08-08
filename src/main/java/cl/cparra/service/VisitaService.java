@@ -5,14 +5,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
-import cl.cparra.modelo.dao.VisitaDao;
+import cl.cparra.modelo.dao.IVisitaDao;
 import cl.cparra.modelo.entity.VisitaEntidad;
 
 public class VisitaService {
 	private static final Logger log = LoggerFactory.getLogger(VisitaService.class);
 
 	@Autowired
-	VisitaDao visitaDao;
+	IVisitaDao visitaDao;
 		
 	 @Transactional(readOnly = true)
 	 public List<VisitaEntidad> getAll(){

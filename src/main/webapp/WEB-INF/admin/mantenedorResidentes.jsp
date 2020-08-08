@@ -100,55 +100,56 @@
 								<form class="needs-validation" novalidate>
 									<div class="form-row">
 										<div class="col-md-3 mb-3">
-											<label for="validationCustom01">Nombre</label> <input
+											<label for="nombre">Nombre</label> <input
 												type="text" class="form-control" id="nombre" name="nombre"
 												placeholder="nombre" value="" required>
 											<div class="valid-feedback">Looks good!</div>
 										</div>
 										<div class="col-md-3 mb-3">
-											<label for="validationCustom02">Apellido</label> <input
+											<label for="apellido">Apellido</label> <input
 												type="text" class="form-control" id="apellido" name="apellido"
 												placeholder="apellido" value="" required>
 											<div class="valid-feedback">Looks good!</div>
 										</div>
 										<div class="col-md-3 mb-3">
-											<label for="validationCustom02">Rut</label> <input
+											<label for="rut">Rut</label> <input
 												type="text" class="form-control" id="rut" name="rut"
 												placeholder="rut" value="" required>
 											<div class="valid-feedback">Looks good!</div>
 										</div>
 										<div class="col-md-3 mb-3">
-											<label for="validationCustom02">Telefono</label> <input
+											<label for="telefono">Telefono</label> <input
 												type="text" class="form-control" id="telefono" name="telefono"
 												placeholder="telefono" value="" required>
 											<div class="valid-feedback">Looks good!</div>
 										</div>
 										<div class="col-md-3 mb-3">
-											<label for="validationCustom02">Correo</label> <input
+											<label for="correo">Correo</label> <input
 												type="text" class="form-control" id="correo" name="correo"
 												placeholder="correo" value="" required>
 											<div class="valid-feedback">Looks good!</div>
 										</div>
 										<div class="col-md-3 mb-3">
-											<label for="validationCustom02">Contraseña</label> <input
+											<label for="contrasenia">Contraseña</label> <input
 												type="text" class="form-control" id="contrasenia" name="contrasenia"
 												placeholder="contrasenia" value="" required>
 											<div class="valid-feedback">Looks good!</div>
 										</div>
 										<div class="form-group col-md-2">
-										      <label for="inputDepartamento">Rol</label>
-										      <select id="inputDepartamento" class="form-control">
+										      <label for="rol">Rol</label>
+										      <select id="rol" class="form-control">
 										        <option selected>Seleccione...</option>
 										        <option>Residente</option>
 										      </select>
 										    </div>
 										    <div class="form-group col-md-1">
-										      <label for="inputDepartamento">Departamento</label>
-										      <select id="inputDepartamento" class="form-control">
-										        <option selected>Seleccione...</option>
-										        <option>101</option>
-										        <option>201</option>
-										      </select>
+										      <label for="departamento">Departamento</label>
+										      <c:forEach var="departamento" items="${departamento}">
+										      	<select id="departamento" class="form-control">
+										       		<option selected>Seleccione...</option>
+										        	<option>${departamento.numero}</option>
+										        </select>
+										      </c:forEach>
 										    </div>
 									</div>
 									<div class="form-group">
@@ -184,15 +185,15 @@
 										</tr>
 									</tfoot>
 									<tbody>
-									<c:forEach var="usuario" items="${usuario}">
+									<c:forEach var="residentes" items="${residentes}">
 										<tr>
-											<td>${usuario.id}</td>
-											<td>${usuario.nombre}</td>
-											<td>${usuario.apellido}</td>
-											<td>${usuario.rut}</td>
-											<td>${usuario.telefono}</td>
-											<td>${usuario.correo}</td>
-											<td>${usuario.departamento}</td>
+											<td>${residentes.id}</td>
+											<td>${residentes.nombre}</td>
+											<td>${residentes.apellido}</td>
+											<td>${residentes.rut}</td>
+											<td>${residentes.telefono}</td>
+											<td>${residentes.correo}</td>
+											<td>${residentes.departamento.numero}</td>
 											<td>
 												<div class="btn-group" role="group" aria-label="Basic example">
 												  <button type="button" class="btn btn-primary">Actualizar</button>
