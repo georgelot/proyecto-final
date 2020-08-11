@@ -21,12 +21,12 @@ public class DepartamentoService {
 	 public List<DepartamentoEntidad> getAll(){
 	 return departamentoDao.findAll();
 	 }
-	 
+	 @Transactional(readOnly = true)
 	 public void insertarDepartamento(DepartamentoEntidad departamento) {
 			departamento.getNumero();
 			log.info("Insertado ok" + departamento);
 	}
-	 
+	 @Transactional(readOnly = true)
 	 public List<DepartamentoEntidad> listarDepartamentos(){
 		 return (List<DepartamentoEntidad>) departamentoDao.findAll();
 	 }

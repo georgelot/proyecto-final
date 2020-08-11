@@ -21,7 +21,7 @@ public class ResidenteService {
 	 public List<UsuarioEntidad> getAll(){
 	 return usuarioDao.findAll();
 	 }
-
+	@Transactional(readOnly = true)
 	public void insertarUsuario(UsuarioEntidad usuario) {
 		/*
 		 * usuario.getNombre(); usuario.getApellido(); usuario.getRut();
@@ -32,23 +32,24 @@ public class ResidenteService {
 		log.info("Insertado ok" + usuario);
 
 	}
-
+	@Transactional(readOnly = true)
 	public void eliminarUsuario(Integer id) {
 		UsuarioEntidad usuario = usuarioDao.findById(id).orElse(null);
 		usuarioDao.delete(usuario);
 		log.info("Eliminado ok" + id);
 
 	}
-
-	public void actualizarUsuario(UsuarioEntidad usuario) {
-		log.info("Actualizado ok");
-		usuarioDao.save(usuario);
+	@Transactional(readOnly = true)
+	public void actualizarUsuario(Integer id) {
+		UsuarioEntidad usuario = usuarioDao.findById(id).orElse(null);
+		usuarioDao.delete(usuario);
+		log.info("Actualizado ok" + id);
 	}
-
+	@Transactional(readOnly = true)
 	public List<UsuarioEntidad> traerTodos() {
 		return usuarioDao.findAll();
 	}
-	
+	@Transactional(readOnly = true)
 	public UsuarioEntidad buscarPorId(Integer id) {
 		return usuarioDao.findById(id).orElse(null);
 	}

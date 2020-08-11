@@ -100,6 +100,7 @@
 								<form class="needs-validation" novalidate>
 									<div class="form-row">
 										<div class="col-md-3 mb-3">
+											<input type="hidden" <c:out value = "${residentes.id}"></c:out>>
 											<label for="nombre">Nombre</label> <input
 												type="text" class="form-control" id="nombre" name="nombre"
 												placeholder="nombre" value="" required>
@@ -185,7 +186,7 @@
 										</tr>
 									</tfoot>
 									<tbody>
-									<c:forEach var="residentes" items="${residentes}">
+									<c:forEach var="residentes" items="${residentes}" var="departamento" items="${departamento}">
 										<tr>
 											<td>${residentes.id}</td>
 											<td>${residentes.nombre}</td>
@@ -193,11 +194,12 @@
 											<td>${residentes.rut}</td>
 											<td>${residentes.telefono}</td>
 											<td>${residentes.correo}</td>
-											<td>${residentes.departamento.numero}</td>
+											<td>${residente.departamento.numero}</td>
 											<td>
 												<div class="btn-group" role="group" aria-label="Basic example">
 												  <button type="button" class="btn btn-primary">Actualizar</button>
-												  <button type="button" class="btn btn-primary">Eliminar</button>
+												  <button type="button" class="btn btn-danger" onclick="return confirm
+												  ('Esta seguro de eliminar el registro?');">Eliminar</button>
 
 												</div>
 											</td>
