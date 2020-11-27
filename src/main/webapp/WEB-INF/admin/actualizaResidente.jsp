@@ -98,10 +98,64 @@
 						<div class="card-body">
 							<div class="table-responsive">
 								<form class="needs-validation" novalidate>
-									
+									<div class="form-row">
+										<div class="col-md-3 mb-3">
+											<input type="hidden" <c:out value = "${residentes.id}"></c:out>>
+											<label for="nombre">Nombre</label> <input
+												type="text" class="form-control" id="nombre" name="nombre"
+												placeholder="nombre" value="" required>
+											<div class="valid-feedback">Looks good!</div>
+										</div>
+										<div class="col-md-3 mb-3">
+											<label for="apellido">Apellido</label> <input
+												type="text" class="form-control" id="apellido" name="apellido"
+												placeholder="apellido" value="" required>
+											<div class="valid-feedback">Looks good!</div>
+										</div>
+										<div class="col-md-3 mb-3">
+											<label for="rut">Rut</label> <input
+												type="text" class="form-control" id="rut" name="rut"
+												placeholder="rut" value="" required>
+											<div class="valid-feedback">Looks good!</div>
+										</div>
+										<div class="col-md-3 mb-3">
+											<label for="telefono">Telefono</label> <input
+												type="text" class="form-control" id="telefono" name="telefono"
+												placeholder="telefono" value="" required>
+											<div class="valid-feedback">Looks good!</div>
+										</div>
+										<div class="col-md-3 mb-3">
+											<label for="correo">Correo</label> <input
+												type="text" class="form-control" id="correo" name="correo"
+												placeholder="correo" value="" required>
+											<div class="valid-feedback">Looks good!</div>
+										</div>
+										<div class="col-md-3 mb-3">
+											<label for="contrasenia">Contraseña</label> <input
+												type="text" class="form-control" id="contrasenia" name="contrasenia"
+												placeholder="contrasenia" value="" required>
+											<div class="valid-feedback">Looks good!</div>
+										</div>
+										<div class="form-group col-md-2">
+										      <label for="rol">Rol</label>
+										      <select id="rol" class="form-control">
+										        <option selected>Seleccione...</option>
+										        <option>Residente</option>
+										      </select>
+										    </div>
+										    <div class="form-group col-md-1">
+										      <label for="departamento">Departamento</label>
+										      <c:forEach var="departamento" items="${departamento}">
+										      	<select id="departamento" class="form-control">
+										       		<option selected>Seleccione...</option>
+										        	<option>${departamento.numero}</option>
+										        </select>
+										      </c:forEach>
+										    </div>
+									</div>
 									<div class="form-group">
 										<div class="form-check">
-											<button class="btn btn-primary" href='<c:out value="/actualizaResidente" />' type="submit">Agregar Residente</button>
+											<button class="btn btn-primary" type="submit">Grabar</button>
 										</div>
 									</div>
 
@@ -131,25 +185,6 @@
 											<th>Accion</th>
 										</tr>
 									</tfoot>
-									<tbody>
-										<tr>
-											<td>1</td>
-											<td>cesar</td>
-											<td>parra</td>
-											<td>14123849-3</td>
-											<td>995149543</td>
-											<td>cesar@mail.com</td>
-											<td>310</td>
-											<td>
-												<div class="btn-group" role="group" aria-label="Basic example">
-												  <button type="button" class="btn btn-primary" >Actualizar</button>
-												  <button type="button" class="btn btn-danger" onclick="return confirm
-												  ('Esta seguro de eliminar el registro?');">Eliminar</button>
-
-												</div>
-											</td>
-										</tr>
-									</tbody>
 								</table>
 							</div>
 						</div>

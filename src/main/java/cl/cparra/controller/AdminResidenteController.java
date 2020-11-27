@@ -1,11 +1,7 @@
 package cl.cparra.controller;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.List;
-
-import javax.servlet.http.HttpSession;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,15 +14,13 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import cl.cparra.modelo.dao.UsuarioDao;
 import cl.cparra.modelo.entity.DepartamentoEntidad;
 import cl.cparra.modelo.entity.UsuarioEntidad;
 import cl.cparra.service.DepartamentoService;
 import cl.cparra.service.ResidenteService;
 
 
-@Controller
+ @Controller
 @RequestMapping("mantenedorResidentes")
 public class AdminResidenteController implements Serializable {
 	private static final long serialVersionUID = 2910211444416719265L;
@@ -45,33 +39,18 @@ public class AdminResidenteController implements Serializable {
 		modelo.addAttribute("username", name);
 		return "admin/mantenedorResidentes";
 	}
-	
-	@PostMapping
-	public String residente(HttpSession session, @ModelAttribute UsuarioDao usuarioIn) {
-		List<UsuarioDao> usuario = new ArrayList<>();
 		
-		if(session.getAttribute("usuario") != null) {
-			@SuppressWarnings("unchecked")
-			List<UsuarioDao> usuarioEnSesion = (List<UsuarioDao>) session.getAttribute("usuario");
-			usuario.addAll(usuarioEnSesion);
-		}
-		usuario.add(usuarioIn);
-		session.setAttribute("usuario", usuario);
-		return "redirect:admin/mantenedorResidentes";
-		
-	}
-	
-	/*
-	 * @PostMapping public String listarResidentes(ModelMap modelo) { Authentication
-	 * auth = SecurityContextHolder.getContext().getAuthentication(); String name =
-	 * auth.getName(); modelo.addAttribute("username", name); List<UsuarioEntidad>
-	 * residentes = residenteService.getAll(); List<DepartamentoEntidad>
-	 * departamento = departamentoService.listarDepartamentos();
-	 * modelo.addAttribute("departamento", departamento);
-	 * modelo.addAttribute("residentes", residentes);
-	 * log.info("listado residentes cargado "); return "admin/mantenedorResidentes";
-	 * }
-	 */
+	  @PostMapping
+	  public String listarResidentes(ModelMap modelo) { 
+		  Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+		  String name = auth.getName(); modelo.addAttribute("username", name); 
+		  List<UsuarioEntidad> residentes = residenteService.getAll();
+		  List<DepartamentoEntidad> departamento = departamentoService.listarDepartamentos();
+		  modelo.addAttribute("departamento", departamento);
+		  modelo.addAttribute("residentes", residentes);
+		  log.info("listado residentes cargado "); return "admin/mantenedorResidentes";
+	  }
+	 
 	 	
 	 @GetMapping("/crear")
 	 public String crearResidente(ModelMap modelo) {
@@ -79,7 +58,7 @@ public class AdminResidenteController implements Serializable {
 		 List<DepartamentoEntidad> departamento = departamentoService.listarDepartamentos();
 		 modelo.addAttribute("residente", residente);
 		 modelo.addAttribute("departamento", departamento);
-		 return "admin/mantenedorResidentes"; }
+		 return "admin/actualizaResidentes"; }
 	  
 	  @GetMapping("/guardar")
 	  public String guardarResidentes(@ModelAttribute UsuarioEntidad usuarioIn) {
