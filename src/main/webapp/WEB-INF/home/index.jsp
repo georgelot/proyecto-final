@@ -118,7 +118,7 @@
 					</div>
 				</div>
 				<div class="sb-sidenav-footer">
-					<div class="small">Autenticado:</div>
+					<div class="small">Autenticado como:</div>
 					<c:out value="${username}"></c:out>
 				</div>
 			</nav>

@@ -28,6 +28,6 @@ public class DepartamentoService {
 	}
 	 @Transactional(readOnly = true)
 	 public List<DepartamentoEntidad> listarDepartamentos(){
-		 return (List<DepartamentoEntidad>) departamentoDao.findAll();
+		 return departamentoDao.findAll();
 	 }
 }

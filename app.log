@@ -1,33 +1,95 @@
-2020-11-27 12:06:03.456  INFO 19040 --- [restartedMain] cl.cparra.AdminedificioApplication       : Starting AdminedificioApplication using Java 1.8.0_261 on LAPTOP-VJC97MUU with PID 19040 (C:\Users\Cesar Parra\Documents\workspace-spring\adminedificio\target\classes started by Cesar Parra in C:\Users\Cesar Parra\Documents\workspace-spring\adminedificio)
-2020-11-27 12:06:03.462  INFO 19040 --- [restartedMain] cl.cparra.AdminedificioApplication       : No active profile set, falling back to default profiles: default
-2020-11-27 12:06:03.510  INFO 19040 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-27 12:06:03.510  INFO 19040 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-11-27 12:06:04.039  INFO 19040 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-11-27 12:06:04.101  INFO 19040 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 5 JPA repository interfaces.
-2020-11-27 12:06:04.635  INFO 19040 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-11-27 12:06:04.641  INFO 19040 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-27 12:06:04.641  INFO 19040 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
-2020-11-27 12:06:04.858  INFO 19040 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2020-11-27 12:06:04.861  INFO 19040 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-11-27 12:06:04.861  INFO 19040 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1351 ms
-2020-11-27 12:06:05.059  INFO 19040 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-27 12:06:05.112  INFO 19040 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-11-27 12:06:05.154  WARN 19040 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-11-27 12:06:05.160  INFO 19040 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
-2020-11-27 12:06:05.371  INFO 19040 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-11-27 12:06:05.568  INFO 19040 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: cl.cparra.config.SQLiteDialect
-2020-11-27 12:06:05.828  INFO 19040 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@22f68bd1, org.springframework.security.web.context.SecurityContextPersistenceFilter@7645c2f4, org.springframework.security.web.header.HeaderWriterFilter@2695d95b, org.springframework.security.web.authentication.logout.LogoutFilter@1c193931, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1afee96d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ee5df09, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@31977f75, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3255486a, org.springframework.security.web.session.SessionManagementFilter@198679ce, org.springframework.security.web.access.ExceptionTranslationFilter@7cf32ed2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@20dff7ac]
-2020-11-27 12:06:06.257  INFO 19040 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-11-27 12:06:06.264  INFO 19040 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-11-27 12:06:06.279  INFO 19040 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-11-27 12:06:06.410  INFO 19040 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-11-27 12:06:06.412  INFO 19040 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
-2020-11-27 12:06:06.625  INFO 19040 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
-2020-11-27 12:06:06.632  INFO 19040 --- [restartedMain] cl.cparra.AdminedificioApplication       : Started AdminedificioApplication in 3.441 seconds (JVM running for 4.673)
-2020-11-27 12:06:14.113  INFO 19040 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-27 12:06:14.113  INFO 19040 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-27 12:06:14.115  INFO 19040 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2020-11-27 12:06:20.939  INFO 19040 --- [http-nio-8080-exec-9] cl.cparra.controller.HomeController      : ok
-2020-11-27 12:06:42.440  INFO 19040 --- [http-nio-8080-exec-9] c.c.controller.AdminEmpleadoController   : vista mantenedor empleados ok
-2020-11-27 12:07:29.116  INFO 19040 --- [http-nio-8080-exec-9] cl.cparra.controller.HomeController      : ok
-2020-11-27 12:07:44.425  INFO 19040 --- [http-nio-8080-exec-10] cl.cparra.controller.HomeController      : ok
+2022-04-22 15:01:55.303  INFO 4688 --- [restartedMain] cl.cparra.AdminedificioApplication       : Starting AdminedificioApplication using Java 1.8.0_221 on LAPTOP-V with PID 4688 (C:\Users\Cesar Parra\Documents\workspace-spring\adminedificio\target\classes started by Cesar Parra in C:\Users\Cesar Parra\Documents\workspace-spring\adminedificio)
+2022-04-22 15:01:55.307  INFO 4688 --- [restartedMain] cl.cparra.AdminedificioApplication       : No active profile set, falling back to default profiles: default
+2022-04-22 15:01:55.349  INFO 4688 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-22 15:01:55.350  INFO 4688 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-22 15:01:55.972  INFO 4688 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-04-22 15:01:56.037  INFO 4688 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 5 JPA repository interfaces.
+2022-04-22 15:01:56.615  INFO 4688 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 15:01:56.621  INFO 4688 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 15:01:56.621  INFO 4688 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2022-04-22 15:01:56.838  INFO 4688 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-04-22 15:01:56.842  INFO 4688 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 15:01:56.843  INFO 4688 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1493 ms
+2022-04-22 15:01:57.033  INFO 4688 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-22 15:01:57.083  INFO 4688 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 15:01:57.150  WARN 4688 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 15:01:57.155  INFO 4688 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2022-04-22 15:01:57.364  INFO 4688 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-04-22 15:01:57.757  INFO 4688 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@47cd02ce, org.springframework.security.web.context.SecurityContextPersistenceFilter@47fab5b8, org.springframework.security.web.header.HeaderWriterFilter@701f8a17, org.springframework.security.web.authentication.logout.LogoutFilter@dfc4151, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@12c68743, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78d15714, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@59853d55, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@39d5fc21, org.springframework.security.web.session.SessionManagementFilter@2d244330, org.springframework.security.web.access.ExceptionTranslationFilter@48070155, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4acbb8b0]
+2022-04-22 15:01:58.239  INFO 4688 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-22 15:01:58.282  INFO 4688 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: cl.cparra.config.SQLiteDialect
+2022-04-22 15:01:58.288  INFO 4688 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-22 15:01:58.290  INFO 4688 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2022-04-22 15:01:58.937  INFO 4688 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 15:01:58.944  INFO 4688 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 15:01:59.170  INFO 4688 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2022-04-22 15:01:59.177  INFO 4688 --- [restartedMain] cl.cparra.AdminedificioApplication       : Started AdminedificioApplication in 4.191 seconds (JVM running for 5.223)
+2022-04-22 15:02:16.778  INFO 4688 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-22 15:02:16.778  INFO 4688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-22 15:02:16.779  INFO 4688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-22 15:02:25.055  INFO 4688 --- [http-nio-8080-exec-4] cl.cparra.controller.HomeController      : ok
+2022-04-22 15:04:23.504  INFO 4688 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 15:04:23.505  INFO 4688 --- [Thread-7] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-04-22 15:04:23.554  INFO 4688 --- [Thread-7] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-22 15:04:23.793  INFO 4688 --- [restartedMain] cl.cparra.AdminedificioApplication       : Starting AdminedificioApplication using Java 1.8.0_221 on LAPTOP-V with PID 4688 (C:\Users\Cesar Parra\Documents\workspace-spring\adminedificio\target\classes started by Cesar Parra in C:\Users\Cesar Parra\Documents\workspace-spring\adminedificio)
+2022-04-22 15:04:23.794  INFO 4688 --- [restartedMain] cl.cparra.AdminedificioApplication       : No active profile set, falling back to default profiles: default
+2022-04-22 15:04:23.968  INFO 4688 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-04-22 15:04:23.996  INFO 4688 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 5 JPA repository interfaces.
+2022-04-22 15:04:24.123  INFO 4688 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 15:04:24.124  INFO 4688 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 15:04:24.124  INFO 4688 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2022-04-22 15:04:24.187  INFO 4688 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-04-22 15:04:24.188  INFO 4688 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 15:04:24.189  INFO 4688 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 393 ms
+2022-04-22 15:04:24.224  INFO 4688 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-22 15:04:24.234  INFO 4688 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 15:04:24.243  INFO 4688 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: cl.cparra.config.SQLiteDialect
+2022-04-22 15:04:24.255  WARN 4688 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 15:04:24.348  INFO 4688 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 15:04:24.348  INFO 4688 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 15:04:24.545  INFO 4688 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6f8ea1ee, org.springframework.security.web.context.SecurityContextPersistenceFilter@3dc715, org.springframework.security.web.header.HeaderWriterFilter@663694a9, org.springframework.security.web.authentication.logout.LogoutFilter@28d7e82a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3d5a5412, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@57ca7a96, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@50b3f1a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5759d2db, org.springframework.security.web.session.SessionManagementFilter@3e3fb97d, org.springframework.security.web.access.ExceptionTranslationFilter@310cd599, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@19a1dff4]
+2022-04-22 15:04:24.558  INFO 4688 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-22 15:04:24.650  INFO 4688 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-22 15:04:24.651  INFO 4688 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2022-04-22 15:04:24.743  INFO 4688 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2022-04-22 15:04:24.746  INFO 4688 --- [restartedMain] cl.cparra.AdminedificioApplication       : Started AdminedificioApplication in 0.983 seconds (JVM running for 150.793)
+2022-04-22 15:04:24.748  INFO 4688 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-22 15:04:40.498  INFO 4688 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-22 15:04:40.498  INFO 4688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-22 15:04:40.499  INFO 4688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-22 15:04:52.614  INFO 4688 --- [http-nio-8080-exec-9] c.c.controller.AdminEmpleadoController   : vista mantenedor empleados ok
+2022-04-22 15:05:35.844  INFO 4688 --- [Thread-14] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 15:05:35.845  INFO 4688 --- [Thread-14] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-04-22 15:05:35.868  INFO 4688 --- [Thread-14] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-22 15:05:36.041  INFO 4688 --- [restartedMain] cl.cparra.AdminedificioApplication       : Starting AdminedificioApplication using Java 1.8.0_221 on LAPTOP-V with PID 4688 (C:\Users\Cesar Parra\Documents\workspace-spring\adminedificio\target\classes started by Cesar Parra in C:\Users\Cesar Parra\Documents\workspace-spring\adminedificio)
+2022-04-22 15:05:36.041  INFO 4688 --- [restartedMain] cl.cparra.AdminedificioApplication       : No active profile set, falling back to default profiles: default
+2022-04-22 15:05:36.258  INFO 4688 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-04-22 15:05:36.284  INFO 4688 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 5 JPA repository interfaces.
+2022-04-22 15:05:36.400  INFO 4688 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 15:05:36.401  INFO 4688 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 15:05:36.401  INFO 4688 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2022-04-22 15:05:36.458  INFO 4688 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-04-22 15:05:36.460  INFO 4688 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 15:05:36.460  INFO 4688 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 415 ms
+2022-04-22 15:05:36.497  INFO 4688 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-22 15:05:36.506  INFO 4688 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 15:05:36.516  INFO 4688 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: cl.cparra.config.SQLiteDialect
+2022-04-22 15:05:36.533  WARN 4688 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 15:05:36.649  INFO 4688 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 15:05:36.650  INFO 4688 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 15:05:36.878  INFO 4688 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@554344d5, org.springframework.security.web.context.SecurityContextPersistenceFilter@3db330ac, org.springframework.security.web.header.HeaderWriterFilter@6c8a3181, org.springframework.security.web.authentication.logout.LogoutFilter@92b8faf, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@400600d4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@65550eb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3bee6f99, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5a88d06, org.springframework.security.web.session.SessionManagementFilter@492bfd55, org.springframework.security.web.access.ExceptionTranslationFilter@44cfe24b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@79a68945]
+2022-04-22 15:05:36.886  INFO 4688 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-22 15:05:36.974  INFO 4688 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-22 15:05:36.975  INFO 4688 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2022-04-22 15:05:37.059  INFO 4688 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2022-04-22 15:05:37.062  INFO 4688 --- [restartedMain] cl.cparra.AdminedificioApplication       : Started AdminedificioApplication in 1.044 seconds (JVM running for 223.108)
+2022-04-22 15:05:37.064  INFO 4688 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-22 15:05:37.124  INFO 4688 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-22 15:05:37.124  INFO 4688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-22 15:05:37.125  INFO 4688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-22 15:05:44.690  INFO 4688 --- [http-nio-8080-exec-2] c.c.controller.AdminEmpleadoController   : vista mantenedor empleados ok
+2022-04-22 15:06:01.368  INFO 4688 --- [http-nio-8080-exec-8] c.c.controller.AdminEmpleadoController   : vista mantenedor empleados ok
+2022-04-22 15:34:44.794  INFO 4688 --- [RMI TCP Connection(43)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-04-22 15:34:45.107  INFO 4688 --- [RMI TCP Connection(43)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 15:34:45.108  INFO 4688 --- [RMI TCP Connection(43)-127.0.0.1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-04-22 15:34:45.130  INFO 4688 --- [RMI TCP Connection(43)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

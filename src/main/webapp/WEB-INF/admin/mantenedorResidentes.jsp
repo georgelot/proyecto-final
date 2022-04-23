@@ -13,7 +13,7 @@
 	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta name="description" content="" />
 <meta name="author" content="" />
-<title>Dashboard - Administrador</title>
+<title>Listado de Residentes</title>
 <link href="css/styles.css" rel="stylesheet" />
 <link
 	href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css"
@@ -95,6 +95,74 @@
 						<div class="card-header">
 							<i class="fas fa-table mr-1"></i> Mantenedor Residentes
 						</div>
+												</div>
+						<div class="card-body">
+							<div class="table-responsive">
+								<form class="needs-validation" novalidate>
+									<div class="form-row">
+										<div class="col-md-3 mb-3">
+											<label for="validationCustom01">Nombre</label> <input
+												type="text" class="form-control" id="nombre" name="nombre"
+												placeholder="nombre" value="" required>
+											<div class="valid-feedback">Se ve bien!</div>
+										</div>
+										<div class="col-md-3 mb-3">
+											<label for="validationCustom02">Apellido</label> <input
+												type="text" class="form-control" id="apellido" name="apellido"
+												placeholder="apellido" value="" required>
+											<div class="valid-feedback">Se ve bien!</div>
+										</div>
+										<div class="col-md-3 mb-3">
+											<label for="validationCustom02">Rut</label> <input
+												type="text" class="form-control" id="rut" name="rut"
+												placeholder="rut" value="" required>
+											<div class="valid-feedback">Se ve bien!</div>
+										</div>
+										<div class="col-md-3 mb-3">
+											<label for="validationCustom02">Telefono</label> <input
+												type="text" class="form-control" id="telefono" name="telefono"
+												placeholder="telefono" value="" required>
+											<div class="valid-feedback">Se ve bien!</div>
+										</div>
+										<div class="col-md-3 mb-3">
+											<label for="validationCustom02">Correo</label> <input
+												type="text" class="form-control" id="correo" name="correo"
+												placeholder="correo" value="" required>
+											<div class="valid-feedback">Se ve bien!</div>
+										</div>
+										<div class="col-md-3 mb-3">
+											<label for="validationCustom02">Contraseña</label> <input
+												type="text" class="form-control" id="contrasenia" name="contrasenia"
+												placeholder="contrasenia" value="" required>
+											<div class="valid-feedback">Se ve bien!</div>
+										</div>
+										    <div class="form-group col-md-2">
+										      <label for="inputDepartamento">Rol</label>
+										      <select id="inputDepartamento" class="form-control">
+										        <option selected>Seleccione...</option>
+										        <option>Residente</option>
+										        <option>Comite</option>
+										      </select>
+										    </div>
+										    <div class="form-group col-md-1">
+										      <label for="inputDepartamento">Departamento</label>
+										      <select id="inputDepartamento" class="form-control">
+										        <option selected>Seleccione...</option>
+										        <option>101</option>
+										        <option>102</option>
+										        <option>201</option>
+										        <option>202</option>
+										        <option>203</option>
+										        <option>301</option>
+										        <option>302r</option>
+										      </select>
+										    </div>
+									</div>
+									<div class="form-group">
+										<div class="form-check">
+											<button class="btn btn-primary" type="submit">Grabar</button>
+										</div>
+									</div>
 						<div class="card-body">
 							<div class="table-responsive">
 								<form class="needs-validation" novalidate>

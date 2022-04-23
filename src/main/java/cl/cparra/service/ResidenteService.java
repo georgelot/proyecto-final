@@ -23,11 +23,13 @@ public class ResidenteService {
 	 }
 	@Transactional(readOnly = true)
 	public void insertarUsuario(UsuarioEntidad usuario) {
+		
 		/*
 		 * usuario.getNombre(); usuario.getApellido(); usuario.getRut();
 		 * usuario.getTelefono(); usuario.getCorreo(); usuario.getContrasenia();
 		 * usuario.getRol(); usuario.getDepartamentos();
 		 */
+		 
 		usuarioDao.save(usuario);
 		log.info("Insertado ok" + usuario);
 
