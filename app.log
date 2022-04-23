@@ -178,3 +178,17 @@ Caused by: java.lang.Error: Unresolved compilation problems:
 2022-04-23 00:30:13.772  INFO 3984 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
 2022-04-23 00:30:13.776  INFO 3984 --- [restartedMain] cl.cparra.AdminedificioApplication       : Started AdminedificioApplication in 2.642 seconds (JVM running for 104.664)
 2022-04-23 00:30:13.778  INFO 3984 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-23 01:17:15.087  INFO 3984 --- [Thread-14] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-23 01:17:15.089  INFO 3984 --- [Thread-14] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-04-23 01:17:15.134  INFO 3984 --- [Thread-14] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-23 01:17:15.576  INFO 3984 --- [restartedMain] cl.cparra.AdminedificioApplication       : Starting AdminedificioApplication using Java 1.8.0_221 on LAPTOP-V with PID 3984 (C:\Users\Cesar Parra\Documents\workspace-spring\proyecto-final\target\classes started by Cesar Parra in C:\Users\Cesar Parra\Documents\workspace-spring\proyecto-final)
+2022-04-23 01:17:15.577  INFO 3984 --- [restartedMain] cl.cparra.AdminedificioApplication       : No active profile set, falling back to default profiles: default
+2022-04-23 01:17:16.156  INFO 3984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-04-23 01:17:16.228  INFO 3984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 5 JPA repository interfaces.
+2022-04-23 01:17:16.670  INFO 3984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-23 01:17:16.672  INFO 3984 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-23 01:17:16.672  INFO 3984 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2022-04-23 01:17:16.882  INFO 3984 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-04-23 01:17:16.887  INFO 3984 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-23 01:17:16.888  INFO 3984 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1303 ms
+2022-04-23 01:17:16.997  INFO 3984 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
